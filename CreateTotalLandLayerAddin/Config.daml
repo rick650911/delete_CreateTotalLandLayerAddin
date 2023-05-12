@@ -1,0 +1,111 @@
+﻿<ArcGIS defaultAssembly="CreateTotalLandLayerAddin.dll" defaultNamespace="CreateTotalLandLayerAddin" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{A684406E-F912-496F-BEA1-47D5AFABB71B}" version="3.3" desktopVersion="2.4"><!--2.8.29751-->
+    <Name>CreateTotalLandLayerAddin</Name>
+    <Description>CreateTotalLandLayerAddin description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Rickl</Author>
+    <Company>Acme</Company>
+    <Date>2021/5/24 下午 02:49:12</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="CreateTotalLandLayerAddin_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="CreateTotalLandLayerAddin_Tab1" caption="地籍總表處理工具">
+          <group refID="CreateTotalLandLayerAddin_Group1"/>
+        <!--<group refID="CreateTotalLandLayerAddin_Group2"/>-->
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="CreateTotalLandLayerAddin_Group1" caption="地籍總表處理工具" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <!--<comboBox refID="CreateTotalLandLayerAddin_combox_fishnet_size" size="middle" />
+          <comboBox refID="CreateTotalLandLayerAddin_combox_DecimalPointDigitNum" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_WeightField" size="middle" />-->
+          <!--<button refID="CreateTotalLandLayerAddin_btnRasterize" size="large" />-->
+          <!--<button refID="CreateTotalLandLayerAddin_btnStreeviewPicProcess" size="large" />-->
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_RootPath" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_Versions" size="middle" />
+          <button refID="CreateTotalLandLayerAddin_btnAddVersionField" size="large" />
+          <button refID="CreateTotalLandLayerAddin_btnCreateTotalLand" size="large" />
+          <!--<button refID="CreateTotalLandLayerAddin_RunPython" size="large" />-->
+        </group>
+        
+      </groups>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <!--<group id="CreateTotalLandLayerAddin_Group2" caption="地籍升版工具" appearsOnAddInTab="true">
+          --><!-- host controls within groups --><!--
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_AreaTolerance" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_BufferSearchTolerance" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_BufferSearchDistance" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_段號Field" size="middle" />
+          <editBox refID="CreateTotalLandLayerAddin_EditBox_登記面積Field" size="middle" />
+          <button refID="CreateTotalLandLayerAddin_btnLandUpdate" size="large" />
+          --><!--<button refID="CreateTotalLandLayerAddin_RunPython" size="large" />--><!--
+        </group>-->
+        
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <!--<comboBox id="CreateTotalLandLayerAddin_combox_fishnet_size" caption="網格大小(公尺)" className="combox_fishnet_size" isEditable="false" isReadOnly="true" itemWidth="70">
+          <tooltip heading="網格大小">
+            --><!--dfs/bfs:--><!--
+            <disabledText></disabledText>
+          </tooltip>
+        </comboBox>
+        <comboBox id="CreateTotalLandLayerAddin_combox_DecimalPointDigitNum" caption="密度值小數位數" className="combox_DecimalPointDigitNum" isEditable="false" isReadOnly="true" itemWidth="70">
+          <tooltip heading="密度值小數位數">
+            --><!--dfs/bfs:--><!--
+            <disabledText></disabledText>
+          </tooltip>
+        </comboBox>
+        
+        <editBox id="CreateTotalLandLayerAddin_EditBox_WeightField" caption="權重欄位" className="EditBox_WeightField" sizeString="AAAAAAAA"></editBox>
+        <button id="CreateTotalLandLayerAddin_btnRasterize" caption="計算密度圖" className="btnRasterize" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>-->
+        <!--<button id="CreateTotalLandLayerAddin_btnStreeviewPicProcess" caption="地籍總表處理" className="btnStreeviewPicProcess" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">
+            Tooltip text<disabledText />
+          </tooltip>
+        </button>-->
+
+        <editBox id="CreateTotalLandLayerAddin_EditBox_RootPath" caption="地籍圖fgdb 所在目錄" className="EditBox_RootPath" sizeString="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"></editBox>
+        <editBox id="CreateTotalLandLayerAddin_EditBox_Versions" caption="版次清單" className="EditBox_Versions" sizeString="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"></editBox>
+        
+        <button id="CreateTotalLandLayerAddin_btnCreateTotalLand" caption="建立地籍總表" className="btnCreateTotalLand" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">
+            Tooltip text<disabledText />
+          </tooltip>
+        </button>
+
+        <button id="CreateTotalLandLayerAddin_btnAddVersionField" caption="建立版次欄位" className="btnAddVersionField" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">
+            Tooltip text<disabledText />
+          </tooltip>
+        </button>
+        
+        <!--<editBox id="CreateTotalLandLayerAddin_EditBox_AreaTolerance" caption="面積差容忍值(比例)" className="EditBox_AreaTolerance" sizeString="AAAAAAAA"></editBox>
+        <editBox id="CreateTotalLandLayerAddin_EditBox_BufferSearchTolerance" caption="Buffer搜尋容忍值(比例)" className="EditBox_BufferSearchTolerance" sizeString="AAAAAAAA"></editBox>
+        <editBox id="CreateTotalLandLayerAddin_EditBox_BufferSearchDistance" caption="Buffer搜尋容忍值(公尺)" className="EditBox_BufferSearchDistance" sizeString="AAAAAAAA"></editBox>
+        <editBox id="CreateTotalLandLayerAddin_EditBox_段號Field" caption="段號欄位(14碼)" className="EditBox_段號Field" sizeString="AAAAAAAA"></editBox>
+        <editBox id="CreateTotalLandLayerAddin_EditBox_登記面積Field" caption="登記面積欄位(單位：平方公尺)" className="EditBox_登記面積Field" sizeString="AAAAAAAAAAAA"></editBox>
+        
+        <button id="CreateTotalLandLayerAddin_btnLandUpdate" caption="地籍版次更新" className="btnLandUpdate" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">在選擇的第2個圖層中，尋找所選擇第1個圖層對應的地籍，輸出到result_圖層中，並記錄重劃、分割、合併等資訊<disabledText /></tooltip>
+        </button>-->
+      
+        <!--<button id="CreateTotalLandLayerAddin_RunPython" caption="RunPython" className="RunPython" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonBlue32.png">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </button>-->
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>

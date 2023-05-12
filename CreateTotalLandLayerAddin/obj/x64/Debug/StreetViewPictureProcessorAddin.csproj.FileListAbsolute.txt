@@ -1,0 +1,16 @@
+D:\COA\系統建置\專案輸出\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\專案輸出\StreetViewPictureProcessorAddin.pdb
+D:\COA\系統建置\街景照片自動化處理\CoaGeoProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.csproj.CoreCompileInputs.cache
+D:\COA\系統建置\街景照片自動化處理\CoaGeoProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\街景照片自動化處理\CoaGeoProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.pdb
+D:\COA\系統建置\街景照片自動化處理\專案輸出\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\街景照片自動化處理\專案輸出\StreetViewPictureProcessorAddin.pdb
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.csprojAssemblyReference.cache
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.csproj.CoreCompileInputs.cache
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.pdb
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.csproj.CoreCompileInputs.cache
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\街景照片自動化處理\StreetViewPictureProcessorAddin\StreetViewPictureProcessorAddin\obj\x64\Debug\StreetViewPictureProcessorAddin.pdb
+D:\COA\系統建置\街景照片自動化處理\專案輸出_StreetViewPictureProcessorAddin\StreetViewPictureProcessorAddin.dll
+D:\COA\系統建置\街景照片自動化處理\專案輸出_StreetViewPictureProcessorAddin\StreetViewPictureProcessorAddin.pdb
